@@ -11,6 +11,14 @@
 		E373D34D28909D0B001A3789 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373D34C28909D0B001A3789 /* ContentView.swift */; };
 		E373D34F28909D0E001A3789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E373D34E28909D0E001A3789 /* Assets.xcassets */; };
 		E373D35228909D0E001A3789 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E373D35128909D0E001A3789 /* Preview Assets.xcassets */; };
+		E373D35928909D26001A3789 /* UIViewToPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373D35828909D26001A3789 /* UIViewToPDFViewController.swift */; };
+		E373D35B2891AE98001A3789 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373D35A2891AE98001A3789 /* Constants.swift */; };
+		E373D35D2891BBB5001A3789 /* ReportTemplate_SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373D35C2891BBB5001A3789 /* ReportTemplate_SwiftUI.swift */; };
+		E373D35F2891BE8E001A3789 /* SwiftUIViewToPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373D35E2891BE8E001A3789 /* SwiftUIViewToPDFViewController.swift */; };
+		E373D3622891C5DF001A3789 /* HTMLtoPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373D3612891C5DF001A3789 /* HTMLtoPDFViewController.swift */; };
+		E373D3642891C6B7001A3789 /* PDFViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373D3632891C6B7001A3789 /* PDFViewerViewController.swift */; };
+		E373D3682891CC6B001A3789 /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = E373D3662891CC6B001A3789 /* main.css */; };
+		E373D3692891CC6B001A3789 /* ReportTemplate_HTML.html in Resources */ = {isa = PBXBuildFile; fileRef = E373D3672891CC6B001A3789 /* ReportTemplate_HTML.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		E373D34C28909D0B001A3789 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E373D34E28909D0E001A3789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E373D35128909D0E001A3789 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E373D35828909D26001A3789 /* UIViewToPDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewToPDFViewController.swift; sourceTree = "<group>"; };
+		E373D35A2891AE98001A3789 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E373D35C2891BBB5001A3789 /* ReportTemplate_SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTemplate_SwiftUI.swift; sourceTree = "<group>"; };
+		E373D35E2891BE8E001A3789 /* SwiftUIViewToPDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewToPDFViewController.swift; sourceTree = "<group>"; };
+		E373D3612891C5DF001A3789 /* HTMLtoPDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLtoPDFViewController.swift; sourceTree = "<group>"; };
+		E373D3632891C6B7001A3789 /* PDFViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewerViewController.swift; sourceTree = "<group>"; };
+		E373D3662891CC6B001A3789 /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
+		E373D3672891CC6B001A3789 /* ReportTemplate_HTML.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ReportTemplate_HTML.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,10 @@
 			children = (
 				E373D34A28909D0B001A3789 /* ViewToPDFApp.swift */,
 				E373D34C28909D0B001A3789 /* ContentView.swift */,
+				E373D35C2891BBB5001A3789 /* ReportTemplate_SwiftUI.swift */,
+				E373D3602891C492001A3789 /* ViewControllers */,
+				E373D3652891CB96001A3789 /* HTML */,
+				E373D35A2891AE98001A3789 /* Constants.swift */,
 				E373D34E28909D0E001A3789 /* Assets.xcassets */,
 				E373D35028909D0E001A3789 /* Preview Content */,
 			);
@@ -65,6 +85,26 @@
 				E373D35128909D0E001A3789 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E373D3602891C492001A3789 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E373D35828909D26001A3789 /* UIViewToPDFViewController.swift */,
+				E373D35E2891BE8E001A3789 /* SwiftUIViewToPDFViewController.swift */,
+				E373D3612891C5DF001A3789 /* HTMLtoPDFViewController.swift */,
+				E373D3632891C6B7001A3789 /* PDFViewerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E373D3652891CB96001A3789 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				E373D3662891CC6B001A3789 /* main.css */,
+				E373D3672891CC6B001A3789 /* ReportTemplate_HTML.html */,
+			);
+			path = HTML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +167,8 @@
 			files = (
 				E373D35228909D0E001A3789 /* Preview Assets.xcassets in Resources */,
 				E373D34F28909D0E001A3789 /* Assets.xcassets in Resources */,
+				E373D3682891CC6B001A3789 /* main.css in Resources */,
+				E373D3692891CC6B001A3789 /* ReportTemplate_HTML.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E373D35928909D26001A3789 /* UIViewToPDFViewController.swift in Sources */,
 				E373D34D28909D0B001A3789 /* ContentView.swift in Sources */,
 				E373D34B28909D0B001A3789 /* ViewToPDFApp.swift in Sources */,
+				E373D3642891C6B7001A3789 /* PDFViewerViewController.swift in Sources */,
+				E373D35D2891BBB5001A3789 /* ReportTemplate_SwiftUI.swift in Sources */,
+				E373D35B2891AE98001A3789 /* Constants.swift in Sources */,
+				E373D35F2891BE8E001A3789 /* SwiftUIViewToPDFViewController.swift in Sources */,
+				E373D3622891C5DF001A3789 /* HTMLtoPDFViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
