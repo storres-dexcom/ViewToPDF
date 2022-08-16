@@ -16,32 +16,49 @@ struct ReportTemplate_SwiftUI: View {
                 Spacer()
             }
             
-            // Title
-            HStack {
+            // Header
+            HStack(alignment: .top) {
+                VStack(alignment: .leading) {
+                    Text("Overview").bold()
+                    Text("5 days").font(.system(size: 12).bold()) + Text(" | Start Date - End Date").font(.system(size: 12))
+                }
                 Spacer()
-                Text("Session Report")
-                    .font(.largeTitle)
-                Spacer()
+                Text("Dexcom Apollo").bold()
             }
-            .padding(.bottom, 4)
-            
-            // Patient Info
-            Text("Name: John Doe")
-            Text("MRN: ########")
-            Text("DOB: 04-24-1977")
-            
-            // Color Stack
-            HStack(spacing: 0) {
-                Color.red
-                Color.green
-                Color.blue
-            }.frame(height: 50)
-            
-            // Full Screen Spacer
+            // EGV Stats
+            HStack(alignment: .top) {
+                EGVStatItem(title: "Avg Low", value: "120")
+                EGVStatItem(title: "Very Low", value: "0.0%")
+                EGVStatItem(title: "Low", value: "0.0%")
+                EGVStatItem(title: "In Target Range", value: "98.6%")
+                EGVStatItem(title: "High", value: "1.4%")
+                EGVStatItem(title: "Very High", value: "0.0%")
+            }
+            .font(.system(size: 12).bold())
+            .padding(.top)
+            SimpleLineChartView(egvs: DisplayEGV.testEGVs)
+                .frame(height: 200)
+                .padding(.top, 30)
             Spacer()
         }
         .padding(20)
-        .frame(maxWidth: .infinity)
+    }
+}
+
+extension ReportTemplate_SwiftUI {
+    struct EGVStatItem: View {
+        var title: String
+        var value: String
+        
+        var body: some View {
+            VStack(alignment: .center) {
+                Text(title)
+                    .padding(.bottom)
+                Text(value)
+            }
+            .frame(maxWidth: .infinity)
+            .font(.system(size: 8).bold())
+        }
     }
 }
 

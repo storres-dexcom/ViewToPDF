@@ -1,0 +1,6 @@
+framework module Pods_ViewToPDF {
+  umbrella header "Pods-ViewToPDF-umbrella.h"
+
+  export *
+  module * { export * }
+}

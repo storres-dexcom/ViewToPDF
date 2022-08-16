@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1CAB7D97A2C8389725424DC /* Pods_ViewToPDF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA562C8B8C094F11B756677 /* Pods_ViewToPDF.framework */; };
+		E33E93DF28ABEE04007C7CE9 /* SimpleLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33E93DE28ABEE04007C7CE9 /* SimpleLineChartView.swift */; };
 		E373D34B28909D0B001A3789 /* ViewToPDFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373D34A28909D0B001A3789 /* ViewToPDFApp.swift */; };
 		E373D34D28909D0B001A3789 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373D34C28909D0B001A3789 /* ContentView.swift */; };
 		E373D34F28909D0E001A3789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E373D34E28909D0E001A3789 /* Assets.xcassets */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CFA70F7650F1EEDBCE2FF4A /* Pods-ViewToPDF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewToPDF.release.xcconfig"; path = "Target Support Files/Pods-ViewToPDF/Pods-ViewToPDF.release.xcconfig"; sourceTree = "<group>"; };
+		9CA562C8B8C094F11B756677 /* Pods_ViewToPDF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewToPDF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E33E93DE28ABEE04007C7CE9 /* SimpleLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLineChartView.swift; sourceTree = "<group>"; };
 		E373D34728909D0B001A3789 /* ViewToPDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewToPDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E373D34A28909D0B001A3789 /* ViewToPDFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewToPDFApp.swift; sourceTree = "<group>"; };
 		E373D34C28909D0B001A3789 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +40,7 @@
 		E373D3632891C6B7001A3789 /* PDFViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewerViewController.swift; sourceTree = "<group>"; };
 		E373D3662891CC6B001A3789 /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
 		E373D3672891CC6B001A3789 /* ReportTemplate_HTML.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ReportTemplate_HTML.html; sourceTree = "<group>"; };
+		FBDEABA3C9C885DD2BCBF159 /* Pods-ViewToPDF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewToPDF.debug.xcconfig"; path = "Target Support Files/Pods-ViewToPDF/Pods-ViewToPDF.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CAB7D97A2C8389725424DC /* Pods_ViewToPDF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F727B27D9FD108F7A39EAE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBDEABA3C9C885DD2BCBF159 /* Pods-ViewToPDF.debug.xcconfig */,
+				3CFA70F7650F1EEDBCE2FF4A /* Pods-ViewToPDF.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1891944F073804B083FE3B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CA562C8B8C094F11B756677 /* Pods_ViewToPDF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E373D33E28909D0B001A3789 = {
 			isa = PBXGroup;
 			children = (
 				E373D34928909D0B001A3789 /* ViewToPDF */,
 				E373D34828909D0B001A3789 /* Products */,
+				6F727B27D9FD108F7A39EAE1 /* Pods */,
+				C1891944F073804B083FE3B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +101,7 @@
 				E373D35A2891AE98001A3789 /* Constants.swift */,
 				E373D34E28909D0E001A3789 /* Assets.xcassets */,
 				E373D35028909D0E001A3789 /* Preview Content */,
+				E33E93DE28ABEE04007C7CE9 /* SimpleLineChartView.swift */,
 			);
 			path = ViewToPDF;
 			sourceTree = "<group>";
@@ -114,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E373D35528909D0E001A3789 /* Build configuration list for PBXNativeTarget "ViewToPDF" */;
 			buildPhases = (
+				49D9A9775D09E73E97AFA570 /* [CP] Check Pods Manifest.lock */,
 				E373D34328909D0B001A3789 /* Sources */,
 				E373D34428909D0B001A3789 /* Frameworks */,
 				E373D34528909D0B001A3789 /* Resources */,
+				C142AB78B0B5A83AB4DE539B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +203,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49D9A9775D09E73E97AFA570 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViewToPDF-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C142AB78B0B5A83AB4DE539B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViewToPDF/Pods-ViewToPDF-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViewToPDF/Pods-ViewToPDF-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViewToPDF/Pods-ViewToPDF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E373D34328909D0B001A3789 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -187,6 +258,7 @@
 				E373D35B2891AE98001A3789 /* Constants.swift in Sources */,
 				E373D35F2891BE8E001A3789 /* SwiftUIViewToPDFViewController.swift in Sources */,
 				E373D3622891C5DF001A3789 /* HTMLtoPDFViewController.swift in Sources */,
+				E33E93DF28ABEE04007C7CE9 /* SimpleLineChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +383,7 @@
 		};
 		E373D35628909D0E001A3789 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBDEABA3C9C885DD2BCBF159 /* Pods-ViewToPDF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -340,6 +413,7 @@
 		};
 		E373D35728909D0E001A3789 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFA70F7650F1EEDBCE2FF4A /* Pods-ViewToPDF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
